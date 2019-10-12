@@ -1,0 +1,128 @@
+<html lang="es">
+
+<head>
+  <link href="Estilos.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+</head>
+<title>
+  ANG App
+</title>
+
+<body>
+  <header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <a class="navbar-brand " href="Inicio.html">
+        <img src="factory.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Ang Co.
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Login<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">Contacto/Soporte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Master (Beta)</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container" style="padding-left: 10px; padding-top:50px;">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <h2 class="card-title font-weight-bold">Log-in</h2>
+
+            <div class="form-group">
+
+              <label for="user">Username:</label>
+              <div class="input-group mb-1">
+                <input type="text" id="txtUser" class="form-control" placeholder="Username of AngCorp" aria-label="user"
+                  aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@ang.com.co</span>
+                </div>
+              </div>
+              <label for="pass">Password:</label>
+              <div class="input-group mb-5">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">#</span>
+                </div>
+                <input type="password" id="txtPass" class="form-control" placeholder="Password" aria-label="pass"
+                  aria-describedby="basic-addon1">
+              </div>
+              <div id="alerta">
+              </div>
+              <label for="register" style="font-size: 90%; color: cornflowerblue;" onclick="registro()"
+                class="cambio">Not registered yet?</label>
+            </div>
+            <button type="button" class="btn btn-outline-dark" onclick="login()">Login</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" id="registro">
+      </div>
+      
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+  <footer style="padding-top: 204px;">
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-light h4">About AngCorp</h5>
+          <span class="text-light">Please visit <a href="angcorportation.com">AngCorp website</a> for find out
+            more.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Cargar React. -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="like_button.js"></script>
+  <script src="logic.js"></script>
+</body>
+<script>
+  $('.carousel').carousel({
+    interval: 100
+  })
+</script>
+
+
+
+<!-- Cargar Bootstrap. -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</html>

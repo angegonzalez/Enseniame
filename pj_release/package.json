@@ -1,0 +1,14 @@
+{
+  "name": "webconfig",
+  "version": "1.0.0",
+  "description": "Proyecto",
+  "main": "logic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^7.0.0"
+  }
+}

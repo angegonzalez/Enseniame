@@ -1,0 +1,23 @@
+
+.navbar-brand{
+    padding-left: 8px;
+    color: antiquewhite;
+}
+.navbar
+{
+    background-color: rgb(10, 135, 151);
+}
+h2.card-title
+{
+    color: rgba(183,222,237,1);
+    color: -moz-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(67,191,232,1) 57%, rgba(33,180,226,1) 99%, rgba(183,222,237,1) 100%);
+    color: -webkit-gradient(left top, right top, color-stop(0%, rgba(183,222,237,1)), color-stop(0%, rgba(113,206,239,1)), color-stop(57%, rgba(67,191,232,1)), color-stop(99%, rgba(33,180,226,1)), color-stop(100%, rgba(183,222,237,1)));
+    color: -webkit-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(67,191,232,1) 57%, rgba(33,180,226,1) 99%, rgba(183,222,237,1) 100%);
+    color: -o-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(67,191,232,1) 57%, rgba(33,180,226,1) 99%, rgba(183,222,237,1) 100%);
+    color: -ms-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(67,191,232,1) 57%, rgba(33,180,226,1) 99%, rgba(183,222,237,1) 100%);
+    color: linear-gradient(to right, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(67,191,232,1) 57%, rgba(33,180,226,1) 99%, rgba(183,222,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=1 );
+}
+body{
+    background-image: url("bg.jpg");
+}

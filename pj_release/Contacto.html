@@ -1,0 +1,93 @@
+<html>
+<html lang="es">
+
+<head>
+    <link href="Estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<title>
+    ANG App
+</title>
+
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand " href="Inicio.html">
+                <img src="factory.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Ang Co.
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Inicio.html">Login</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Contacto.html">Contacto/Soporte<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Master (Beta)</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid" style="padding-top: 50px;padding-left: 50px;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <h2 class=" card-title font-weight-bold" style="text-align: center;padding-top:20px;">Contacto y Soporte</h2>
+                    <p></p>
+                    <form>
+                    <div class="form-group-row" style="padding-left: 20px;padding-right: 20px;">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp"
+                                placeholder="Your AngCorp email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Full name</label>
+                            <input type="password" class="form-control" id="txt" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="areatxt">Select your area</label>
+                            <select class="form-control form-control-sm">
+                                <option>Human Resources</option>
+                                <option>Operating</option>
+                                <option>IT Developers</option>
+                                <option>Web Design</option>
+                                <option>Fullstack Developers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Enter your feedback here</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-outline-info" onclick="enviarContacto()">Submit</button>
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="logic.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>
