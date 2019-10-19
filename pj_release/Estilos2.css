@@ -9,3 +9,7 @@
 body{
     background-image: url("bg4.jpg");
 }
+
+span.navbar-text:hover{
+    color: azure;
+}
