@@ -1,4 +1,3 @@
-
 <html lang="es">
 
 <head>
@@ -9,10 +8,9 @@
   <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
   <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-   
   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
 </head>
 <title>
   ANG App
@@ -48,7 +46,9 @@
         <div class="card text-center">
           <div class="card-body">
             <h2 class="card-title font-weight-bold">Log-in</h2>
+
             <div class="form-group">
+
               <label for="user">Username:</label>
               <div class="input-group mb-1">
                 <input type="text" id="txtUser" class="form-control" placeholder="Username of AngCorp" aria-label="user"
@@ -101,8 +101,18 @@
       </nav>
     </div>
   </footer>
+
+  <!-- Cargar React. -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="like_button.js"></script>
   <script src="logic.js"></script>
 </body>
+<script>
+  $('.carousel').carousel({
+    interval: 100
+  })
+</script>
 
 
 
