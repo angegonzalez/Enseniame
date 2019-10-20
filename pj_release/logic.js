@@ -49,9 +49,7 @@ function login() {
 
   });
 }
-function registro() {
-  alert("Quiubo");
-}
+
 window.addEventListener('mouseover', function (evt) {
   if (evt.target.classList.contains('cambio')) {
     evt.target.style.color = '#90B4D1';

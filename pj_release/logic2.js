@@ -37,3 +37,8 @@ function serProfesor()
         alert("###Developing###");
     }
 }
+function exit()
+{
+    alert("Gracias por usar nuestros servicios");
+    window.location = "Inicio.html";
+}

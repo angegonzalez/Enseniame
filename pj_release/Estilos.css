@@ -19,5 +19,5 @@ h2.card-title
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=1 );
 }
 body{
-    background-image: url("bg.jpg");
+    background-image: url("/resources/bg.jpg");
 }

@@ -11,38 +11,59 @@
 
 <body>
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand " href="Inicio.html">
-                <img src="factory_2.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                <img src="/resources/factory_2.svg" width="30" height="30" class="d-inline-block align-top" alt="">
                 Enseñame
             </a>
             <a style="font-size: 70%;color: white;">
                 By AngCorp
             </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item" style="padding-left: 2.1%;">
-                        <a href="#">
-                                <img src="professor.svg" width="80" height="45" class="d-inline-block align-top"
-                                alt="" onclick="serProfesor()"></a>
-                            
-
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <img src="/resources/professor.svg" width="80" height="45" class="d-inline-block align-top" alt=""
+                                onclick="serProfesor()">
+                            <span class="navbar-text">Ser profesor</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#"><img src="blackboard.svg" width="80" height="45" class="d-inline-block align-top"
-                                alt=""> </a>
+                        <a class="nav-link">
+                            <img src="/resources/blackboard.svg" width="80" height="45" class="d-inline-block align-top"
+                                alt="">
+                            <span class="navbar-text">
+                                Solicitar clases
+                            </span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#"><img src="notebook.svg" width="80" height="45" class="d-inline-block align-top"
-                                alt=""> </a>
+                        <a class="nav-link"><img src="/resources/notebook.svg" width="80" height="45" class="d-inline-block align-top"
+                                alt="">
+                            <span class="navbar-text">
+                                Ver mis clases
+                            </span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#"><img src="bookshelf.svg" width="80" height="45" class="d-inline-block align-top"
-                                alt=""> </a>
+                        <a class="nav-link"><img src="/resources/bookshelf.svg" width="80" height="45" class="d-inline-block align-top"
+                                alt="">
+                            <span class="navbar-text">
+                                Ver mis tutorias
+                            </span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#"><img src="wallet.svg" width="80" height="45" class="d-inline-block align-top"
-                                alt=""> </a>
+                        <a class="nav-link"><img src="/resources/wallet.svg" width="80" height="45" class="d-inline-block align-top"
+                                alt="">
+                            <span class="navbar-text">
+                                EduPay
+                            </span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -65,28 +86,44 @@
                         <br>
                         <p>Disfruta de la nueva App Web :). By: <span class="badge badge-dark">Enseña-me team</span>
                         </p>
-
+                    </br>
+                        <div style="padding-left: 30%;">
+                            <button type="button" class="btn btn-outline-danger" onclick="exit()">Salir de la aplicacion </button>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-md-2">
 
                 </div>
                 <div class="col-md-5">
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
                         <div class="card-body text-dark text-center">
-                          <h5 class="card-title" id="card-user-title"></h5>
-                          <img src="student.svg" width="100" height="120" class="rounded-circle">
-                          </br> </br>
-                          <div id="mensaje_bienvenida"></div>
-                        
-                          <p style="font-size: 90%;"><span class="badge badge-pill badge-dark" id="saldo">Saldo</span>         200EDC</p>
-                          <span class="badge badge-pill badge-success">Online</span>
-                    </br>
-                </br>  
-                          <button type="button" class="btn btn-outline-dark" onclick="">Modificar</button>
-               
+                            <h5 class="card-title" id="card-user-title"></h5>
+                            <img src="/resources/student.svg" width="100" height="120" class="rounded-circle">
+                            </br> </br>
+                            <div id="mensaje_bienvenida"></div>
+
+                            <p style="font-size: 90%;"><span class="badge badge-pill badge-dark" id="saldo">Saldo</span>
+                                200EDC</p>
+                            <span class="badge badge-pill badge-success">Online</span>
+                            </br>
+                            </br>
+                            <button type="button" class="btn btn-outline-dark" onclick="">Modificar</button>
+
                         </div>
+                    </div>
                 </div>
-            </div>
-            <script src="logic2.js"></script>
+                <script src="logic2.js"></script>
+
 </body>
+<!-- Cargar Bootstrap. -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
